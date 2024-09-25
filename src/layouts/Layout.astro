@@ -20,6 +20,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator}>
     <title>{title}</title>
     <meta name="description" content="A simple blog">
+    <script defer src="https://umami.oospace.com/script.js" data-website-id="671d5c65-e3dd-42e1-9b89-597abb24f0bd"></script>
     { import.meta.env.HEAD_SCRIPTS && <Fragment set:html={import.meta.env.HEAD_SCRIPTS } /> }
     { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
     { import.meta.env.PROD && pwaInfo && <Fragment set:html={pwaInfo.registerSW.scriptTag} /> }
